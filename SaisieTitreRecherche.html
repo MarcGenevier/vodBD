@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Rechercher un film</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="vod.css" />
+    </head>
+    <body>
+        <fieldset>
+            <legend>Renseignez les informations de votre film :</legend>
+            <form action="controller/rechercherFilm.php" method="POST" name="rechercherFilm" >
+                <label>Titre :</label>
+                <br/>
+				<input required type="text" name="titre" class="search_bar" placeholder= "Rechercher un titre :" />
+                <br/>
+                <br/>
+
+                <input type="submit" value="Rechercher" class="button" />
+                <br/>
+                <br/>
+                
+                <input type="reset" value="Annuler" class="button" />
+            </form>
+        </fieldset>
+    </body>
+</html>

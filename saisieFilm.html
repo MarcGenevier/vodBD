@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Ajouter un film</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="vod.css" />
+    </head>
+    <body>
+        <fieldset>
+            <legend>Renseignez les informations de votre film :</legend>
+            <form action="controller/ajouterFilm.php" method="POST" name="ajouterFilm" >
+                <label>Titre :</label>
+                <br/>
+                <input required type="number" name="numFilm" placeholder="Saisir le numéro du film:"/>
+                <br/>
+                <br/>
+                
+				<input required type="text" name="titre" placeholder= "Saisir le titre :" />
+                <br/>
+                <br/>
+                
+                <label>Année :</label>
+                <br/>
+                <input required type="number" name="annee" placeholder= "Saisir l'année :" />
+                <br/>
+                <br/>
+                
+                <label>Réalisateur :</label>
+                <br/>
+                <input required type="text" name="realisateur" placeholder= "Saisir le réalisateur :" />
+                <br/>
+                <br/>
+                
+                <input type="submit" value="Valider" class="button" />
+                <br/>
+                <br/>
+                
+                <input type="reset" value="Annuler" class="button" />
+            </form>
+        </fieldset>
+    </body>
+</html>
